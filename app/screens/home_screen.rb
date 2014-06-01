@@ -1,10 +1,8 @@
 class HomeScreen < PM::Screen
-  title "Home"
+  title "Jim Carrey"
 
   def on_load
-  end
-
-  def will_appear
+    @layout = HomeLayout.new(root: self.view).build
   end
 
 end
