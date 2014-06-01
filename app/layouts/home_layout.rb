@@ -38,10 +38,9 @@ class HomeLayout < MK::Layout
   end
 
   def movies_style
-    below(:profile_image, down: 10)
+    top 200
     left 0
-    right 0
-    bottom 0
+    right "100%"
   end
 
 end

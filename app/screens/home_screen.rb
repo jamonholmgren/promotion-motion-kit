@@ -11,8 +11,13 @@ class HomeScreen < PM::Screen
     @movies_screen ||= begin
       m = MoviesScreen.new
       self.addChildViewController m
+      m.parent_screen = self
       m
     end
+  end
+
+  def select_movie(movie)
+    PM.logger.info movie
   end
 
 end
