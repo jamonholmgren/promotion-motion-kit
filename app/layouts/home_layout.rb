@@ -1,8 +1,11 @@
 class HomeLayout < MK::Layout
+  attr_accessor :movies_view
 
   def layout
     root :home do
       add UIImageView, :profile_image
+      add UILabel, :profession
+      add movies_view, :movies
     end
   end
 
@@ -22,6 +25,23 @@ class HomeLayout < MK::Layout
       width 100
       height 100
     end
+  end
+
+  def profession_style
+    text "Actor, Comedian"
+    font UIFont.boldSystemFontOfSize(20)
+    constraints do
+      top 118
+      right_of(:profile_image).plus(20)
+      height 30
+    end
+  end
+
+  def movies_style
+    below(:profile_image, down: 10)
+    left 0
+    right 0
+    bottom 0
   end
 
 end
