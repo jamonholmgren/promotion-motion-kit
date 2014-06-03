@@ -1,5 +1,5 @@
 class HomeLayout < MK::Layout
-  attr_accessor :movies_view
+  view :movies_view
 
   def layout
     root :home do
