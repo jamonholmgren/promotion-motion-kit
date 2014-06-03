@@ -5,7 +5,7 @@ class HomeLayout < MK::Layout
     root :home do
       add UIImageView, :profile_image
       add UILabel, :profession
-      add movies_view, :movies
+      add movies_view, :movies_view
     end
   end
 
@@ -37,7 +37,7 @@ class HomeLayout < MK::Layout
     end
   end
 
-  def movies_style
+  def movies_view_style
     top 200
     left 0
     right "100%"
