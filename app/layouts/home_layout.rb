@@ -41,6 +41,7 @@ class HomeLayout < MK::Layout
     top 200
     left 0
     right "100%"
+    height "100% - 200"
   end
 
 end
