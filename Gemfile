@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
 gem "rake"
-gem "ProMotion", github: "clearsightstudio/ProMotion", branch: "pm2"
-gem "motion-kit", "~> 0.10.1"
-gem "sugarcube", "~> 1.6.1", require: ["sugarcube-color", "sugarcube-uikit"]
+gem "ProMotion", "~> 2.1" #, github: "clearsightstudio/ProMotion", branch: "version-2.3"
+gem "motion-kit", "~> 0.17"
+gem "sugarcube", "~> 3.2", require: ["sugarcube-color", "sugarcube-ui"]
